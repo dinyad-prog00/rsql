@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  /*background-color: blueviolet;*/
+  max-height: 100dvh;
+  height: 100dvh;
+}
+
+#root{
+  /*background-color: aqua;*/
+  max-height: 100dvh;
+  height: 100dvh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*Editor*/
+.tree-file:hover {
+  background-color: rgb(42, 48, 52);
+}
+/*
+.cm-editor {
+  height: 600px;
+  width: 800px;
+ 
+}*/
+
+.cm-scroller {
+  overflow: auto;
+ 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cm-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cm-scroller {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+
+.cm-gutters {
+  background-color: rgb(31, 34, 36) !important;
+  
+}
+
+
+/* when scroll started add on-scrollbar class*/
+
+.on-scrollbar::-webkit-scrollbar {
+  display: block !important;
+  color: #423f3f !important;
+}
+
+
+.on-scrollbar{
+  scrollbar-width: thin; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.on-scrollbar::-webkit-scrollbar-track {
+ 
+  background-color: rgb(52, 51, 54) !important;
+}
+
+.on-scrollbar::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+}
+
+
+
+.cm-gutter {
+  
+}
+
+.cm-gutterElement {
+ 
+}
+
+.cm-activeLineGutter {
+  background-color: rgb(49, 54, 57) !important;
+  color:  rgb(195, 207, 222) !important;;
+}
+
+.cm-lineNumbers {
+  color: rgb(85, 90, 96) !important;
+
+}
+
+.cm-content {
+
+}
+
+.cm-line {
+
+}
+
+.cm-selectionLayer{
+
+}
+
+.cm-selectionBackground {
+
+}
+
+.cm-cursorLayer {
+
+}
+
+.cm-cursor {
+
+}
+
+.cm-activeLine {
+  background-color:rgb(5, 60, 78)  !important;
+}
+
+
+
+.yeto-tab{
+  width: 0px;
+}
+.tab-content {
+  width: 100px !important;
+}
+.nav-tabs{
+  background-color: rgb(42, 48, 52) !important;
+  border-color: rgb(28, 32, 34) !important;
+  
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  width: 100vw;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;  
+ 
+  
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none !important;
+}
+
+.cm-editor li.nav-item {
+  background-color: rgb(42, 48, 52) !important;
+}
+
+.nav-link{
+  border-right: 1px solid rgb(31, 34, 36) !important;
+  border-radius: 0 0 0 0 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+
+.nav-link.active {
+  background-color: rgb(31, 34, 36) !important;
+  color: blueviolet !important;
+  border-color: rgb(28, 32, 34) !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+/*Fin Editor*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.resizable {
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
