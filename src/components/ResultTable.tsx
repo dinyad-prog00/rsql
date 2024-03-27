@@ -3,8 +3,8 @@ import React from "react"
 const ResultTable = ({ rows, fields }: { rows: any[], fields: any[] }) => {
     return (
 
-        <div className="h-full rounded-lg p-1 shadow-xs bg-white ">
-            <table className="w-full  whitespace-nowrap rounded-t-lg  text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+        <div className="h-full rounded-lg p-1 shadow-xs bg-white dark:bg-gray-900 ">
+            <table className="w-full  whitespace-nowrap rounded-t-lg  text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400  ">
                 <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr className="">
                         {
